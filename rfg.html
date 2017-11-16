@@ -1,0 +1,805 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>Advent calendar</title>
+
+		<meta name="description" content="Advent calendar">
+		<meta name="author" content="Gloucestershire County Council: Digital">
+
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<!-- Latest compiled Bootstrap JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	</head>
+
+	<body>
+
+		<div class="container">
+			<div>
+				<div id="div01" class="col-md-3 col-sm-4 col-xs-6 text-center lead" style="height: 220px;">
+					<button id="btn01" class="btn-success" data-toggle="modal" data-target="#myModal01" style="height: 220px; width: 200px;"><img src="http://www.gloucestershire.gov.uk/media/18630/advent-no-1-web-icon.jpg">
+					</button>
+				</div>
+				<div id="div02" class="col-md-3 col-sm-4 col-xs-6 text-center lead" style="height: 220px;">
+					<button id="btn02" class="btn-success" data-toggle="modal" data-target="#myModal02" style="height: 220px; width: 200px;"><img src="http://www.gloucestershire.gov.uk/media/18632/turkey-no-2-web-icon.jpg">
+					</button>
+				</div>
+				<div id="div03" class="col-md-3 col-sm-4 col-xs-6 text-center lead" style="height: 220px;">
+					<button id="btn03" class="btn-success" data-toggle="modal" data-target="#myModal03" style="height: 220px; width: 200px;"><img src="http://www.gloucestershire.gov.uk/media/18631/toy-no-3-web-icon.jpg">
+					</button>
+				</div>
+				<div id="div04" class="col-md-3 col-sm-4 col-xs-6 text-center lead" style="height: 220px;">
+					<button id="btn04" class="btn-success" data-toggle="modal" data-target="#myModal04" style="height: 220px; width: 200px;"><img src="http://www.gloucestershire.gov.uk/media/18667/cards-no-4-web-icon.jpg">
+					</button>
+				</div>
+				<div id="div05" class="col-md-3 col-sm-4 col-xs-6 text-center lead" style="height: 220px;">
+					<button id="btn05" class="btn-success" data-toggle="modal" data-target="#myModal05" style="height: 220px; width: 200px;"><img src="http://www.gloucestershire.gov.uk/media/18655/wrapping-paper-no-5-web-icon.jpg">
+					</button>
+				</div>
+				<div id="div06" class="col-md-3 col-sm-4 col-xs-6 text-center lead" style="height: 220px;">
+					<button id="btn06" class="btn-success" data-toggle="modal" data-target="#myModal06" style="height: 220px; width: 200px;"><img src="http://www.gloucestershire.gov.uk/media/18642/fairy-lights-no-6-web-icon.jpg">
+					</button>
+				</div>
+				<div id="div07" class="col-md-3 col-sm-4 col-xs-6 text-center lead" style="height: 220px;">
+					<button id="btn07" class="btn-success" data-toggle="modal" data-target="#myModal07" style="height: 220px; width: 200px;"><img src="http://www.gloucestershire.gov.uk/media/18640/cards-and-tags-no-7-web-icon.jpg">
+					</button>
+				</div>
+				<div id="div08" class="col-md-3 col-sm-4 col-xs-6 text-center lead" style="height: 220px;">
+					<button id="btn08" class="btn-success" data-toggle="modal" data-target="#myModal08" style="height: 220px; width: 200px;"><img src="http://www.gloucestershire.gov.uk/media/18660/tupperware-no-8-web-icon.jpg">
+					</button>
+				</div>
+				<div id="div09" class="col-md-3 col-sm-4 col-xs-6 text-center lead" style="height: 220px;">
+					<button id="btn09" class="btn-success" data-toggle="modal" data-target="#myModal09" style="height: 220px; width: 200px;"><img src="http://www.gloucestershire.gov.uk/media/18663/weee-no-9-web-icon.jpg">
+					</button>
+				</div>
+				<div id="div10" class="col-md-3 col-sm-4 col-xs-6 text-center lead" style="height: 220px;">
+					<button id="btn10" class="btn-success" data-toggle="modal" data-target="#myModal10" style="height: 220px; width: 200px;"><img src="http://www.gloucestershire.gov.uk/media/18646/furoshiki-no-10-web-icon.jpg">
+					</button>
+				</div>
+				<div id="div11" class="col-md-3 col-sm-4 col-xs-6 text-center lead" style="height: 220px;">
+					<button id="btn11" class="btn-success" data-toggle="modal" data-target="#myModal11" style="height: 220px; width: 200px;"><img src="http://www.gloucestershire.gov.uk/media/18653/shopping-list-no-11-web-icon.jpg">
+					</button>
+				</div>
+				<div id="div12" class="col-md-3 col-sm-4 col-xs-6 text-center lead" style="height: 220px;">
+					<button id="btn12" class="btn-success" data-toggle="modal" data-target="#myModal12" style="height: 220px; width: 200px;"><img src="http://www.gloucestershire.gov.uk/media/18648/glass-jar-no-12-web-icon.jpg">
+					</button>
+				</div>
+				<div id="div13" class="col-md-3 col-sm-4 col-xs-6 text-center lead" style="height: 220px;">
+					<button id="btn13" class="btn-success" data-toggle="modal" data-target="#myModal13" style="height: 220px; width: 200px;"><img src="http://www.gloucestershire.gov.uk/media/18658/tree-no-13-web-icon.jpg">
+					</button>
+				</div>
+				<div id="div14" class="col-md-3 col-sm-4 col-xs-6 text-center lead" style="height: 220px;">
+					<button id="btn14" class="btn-success" data-toggle="modal" data-target="#myModal14" style="height: 220px; width: 200px;"><img src="http://www.gloucestershire.gov.uk/media/18651/recycling-containers-no-14-web-icon.jpg">
+					</button>
+				</div>
+				<div id="div15" class="col-md-3 col-sm-4 col-xs-6 text-center lead" style="height: 220px;">
+					<button id="btn15" class="btn-success" data-toggle="modal" data-target="#myModal15" style="height: 220px; width: 200px;"><img src="http://www.gloucestershire.gov.uk/media/18638/homemade-bell-no-15-web-icon.jpg">
+					</button>
+				</div>
+				<div id="div16" class="col-md-3 col-sm-4 col-xs-6 text-center lead" style="height: 220px;">
+					<button id="btn16" class="btn-success" data-toggle="modal" data-target="#myModal16" style="height: 220px; width: 200px;"><img src="http://www.gloucestershire.gov.uk/media/18644/freezer-no-16-web-icon.jpg">
+					</button>
+				</div>
+				<div id="div17" class="col-md-3 col-sm-4 col-xs-6 text-center lead" style="height: 220px;">
+					<button id="btn17" class="btn-success" data-toggle="modal" data-target="#myModal17" style="height: 220px; width: 200px;"><img src="http://www.gloucestershire.gov.uk/media/18679/gingerbread-no-17-web-icon.jpg">
+					</button>
+				</div>
+				<div id="div18" class="col-md-3 col-sm-4 col-xs-6 text-center lead" style="height: 220px;">
+					<button id="btn18" class="btn-success" data-toggle="modal" data-target="#myModal18" style="height: 220px; width: 200px;"><img src="http://www.gloucestershire.gov.uk/media/18683/calendar-no-18-web-icon.jpg">
+					</button>
+				</div>
+				<div id="div19" class="col-md-3 col-sm-4 col-xs-6 text-center lead" style="height: 220px;">
+					<button id="btn19" class="btn-success" data-toggle="modal" data-target="#myModal19" style="height: 220px; width: 200px;"><img src="http://www.gloucestershire.gov.uk/media/18682/textiles-no-19-web-icon.jpg">
+					</button>
+				</div>
+				<div id="div20" class="col-md-3 col-sm-4 col-xs-6 text-center lead" style="height: 220px;">
+					<button id="btn20" class="btn-success" data-toggle="modal" data-target="#myModal20" style="height: 220px; width: 200px;"><img src="http://www.gloucestershire.gov.uk/media/18678/foil-no-20-web-icon.jpg">
+					</button>
+				</div>
+				<div id="div21" class="col-md-3 col-sm-4 col-xs-6 text-center lead" style="height: 220px;">
+					<button id="btn21" class="btn-success" data-toggle="modal" data-target="#myModal21" style="height: 220px; width: 200px;"><img src="http://www.gloucestershire.gov.uk/media/18677/tree-with-lights-no-21-web-icon.jpg">
+					</button>
+				</div>
+				<div id="div22" class="col-md-3 col-sm-4 col-xs-6 text-center lead" style="height: 220px;">
+					<button id="btn22" class="btn-success" data-toggle="modal" data-target="#myModal22" style="height: 220px; width: 200px;"><img src="http://www.gloucestershire.gov.uk/media/18671/xmas-plates-no-22-web-icon.jpg">
+					</button>
+				</div>
+				<div id="div23" class="col-md-3 col-sm-4 col-xs-6 text-center lead" style="height: 220px;">
+					<button id="btn23" class="btn-success" data-toggle="modal" data-target="#myModal23" style="height: 220px; width: 200px;"><img src="http://www.gloucestershire.gov.uk/media/18681/hrc-no-23-web-icon.jpg">
+					</button>
+				</div>
+				<div id="div24" class="col-md-3 col-sm-4 col-xs-6 text-center lead" style="height: 220px;">
+					<button id="btn24" class="btn-success" data-toggle="modal" data-target="#myModal24" style="height: 220px; width: 200px;"><img src="http://www.gloucestershire.gov.uk/media/18680/ribbons-and-tags-no-24-web-icon.jpg">
+					</button>
+				</div>
+				<div id="div25" class="col-xs-12 text-center lead" style="height: 220px;">
+					<button id="btn25" class="btn-success" data-toggle="modal" data-target="#myModal25" style="height: 220px; width: 200px;"><img src="http://www.gloucestershire.gov.uk/media/18688/no-25-web-icon.jpg">
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- Messages -->
+
+		<div class="modal fade" id="myModal01" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content alert alert-success lead">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">
+							&times;
+						</button>
+						<h1>Advent calendars</h1>
+					</div>
+					<div class="modal-body">
+						<p>
+							Avoid single use advent calendars which are thrown away after they are used.
+						</p>
+						<p>
+							Why not make a more eco- calendar using old coloured envelopes into which to pop your own goodies or make numbered pockets out of old vintage fabrics and hang these up around the home.
+						</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">
+							Close
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="myModal02" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content alert alert-success lead">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">
+							&times;
+						</button>
+						<h1>Leftovers</h1>
+					</div>
+					<div class="modal-body">
+						<p>
+							Visit <a href="http://www.lovefoodhatewaste.com/" class="btn-success">&nbsp;www.lovefoodhatewaste.com&nbsp;</a> for a range of seasonal recipes, helping you make the most of your food leftovers.
+						</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">
+							Close
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="myModal03" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content alert alert-success lead">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">
+							&times;
+						</button>
+						<h1>Batteries</h1>
+					</div>
+					<div class="modal-body">
+						<p>
+							Plenty of Christmas gadgets and toys rely on batteries so why not invest in rechargeable ones?
+						</p>
+						<p>
+							While these can cost a little more than single-life batteries they will repay you time and time again and last for many years to come.
+						</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">
+							Close
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="myModal04" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content alert alert-success lead">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">
+							&times;
+						</button>
+						<h1>Cards</h1>
+					</div>
+					<div class="modal-body">
+						<p>
+							Help reduce waste by sending e-cards instead of more traditional Christmas cards.
+						</p>
+						<p>
+							If you are not sure what to buy why not consider giving a gift card to be used for a day out or experience instead of giving something which may just be consigned to a back of cupboard?
+						</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">
+							Close
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="myModal05" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content alert alert-success lead">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">
+							&times;
+						</button>
+						<h1>Wrapping paper</h1>
+					</div>
+					<div class="modal-body">
+						<p>
+							Opt for wrapping paper which can be easily recycled.
+						</p>
+						<p>
+							Wrap which is foiled or glittered isn’t recyclable so chose paper-only wrap - or why not consider reusable packaging such as gift bags?
+						</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">
+							Close
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="myModal06" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content alert alert-success lead">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">
+							&times;
+						</button>
+						<h1>Lights</h1>
+					</div>
+					<div class="modal-body">
+						<p>
+							Don’t bin your broken fairy lights.
+						</p>
+						<p>
+							The Waste and Resources Action Programme (WRAP) estimates that 500 tonnes of lights are thrown each year.
+						</p>
+						<p>
+							Take them to <a href="http://www.recycleforgloucestershire.com/household-recycling-centres-hrcs/your-nearest-recycling-centre/" class="btn-success">&nbsp;your local Household Recycling Centre&nbsp;</a> and put in the bank for small electrical items.
+						</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">
+							Close
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="myModal07" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content alert alert-success lead">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">
+							&times;
+						</button>
+						<h1>Foil, glitter and ribbons</h1>
+					</div>
+					<div class="modal-body">
+						<p>
+							Cards covered with foil, glitter and ribbons can’t be recycled so keep these to make gift tags for your presents.
+						</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">
+							Close
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="myModal08" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content alert alert-success lead">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">
+							&times;
+						</button>
+						<h1>Storing leftovers</h1>
+					</div>
+					<div class="modal-body">
+						<p>
+							Check you have foil, plastic film and Tupperware boxes at the ready to store any leftover foods during the party season.
+						</p>
+						<p>
+							Hang on to empty margarine tubs too as these will work just as well!
+						</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">
+							Close
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="myModal09" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content alert alert-success lead">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">
+							&times;
+						</button>
+						<h1>Old electricals</h1>
+					</div>
+					<div class="modal-body">
+						<p>
+							Many of us will be given a new electrical device this Christmas.
+						</p>
+						<p>
+							However, sending old electricals to landfill can cause environmental problems as they can contain hazardous substances such as lead and arsenic.
+						</p>
+						<p>
+							Make sure to take old items to <a href="http://www.recycleforgloucestershire.com/household-recycling-centres-hrcs/your-nearest-recycling-centre/" class="btn-success">&nbsp;the Household Recycling Centre&nbsp;</a> and place in the bank for small electricals if they cannot be repaired.
+						</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">
+							Close
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="myModal10" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content alert alert-success lead">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">
+							&times;
+						</button>
+						<h1>Furoshiki</h1>
+					</div>
+					<div class="modal-body">
+						<p>
+							Furoshiki is the Japanese art of gift-wrapping using fabric which can be used again and again.
+						</p>
+						<p>
+							Need some inspiration?  Visit: <a href="https://www.youtube.com/watch?v=Bn6zdyCAwJs" class="btn-success">&nbsp;YouTube&nbsp;</a>.
+						</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">
+							Close
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="myModal11" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content alert alert-success lead">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">
+							&times;
+						</button>
+						<h1>Reduce waste with a list</h1>
+					</div>
+					<div class="modal-body">
+						<p>
+							It’s easy to get carried away with the Christmas food shop.
+						</p>
+						<p>
+							Make sure you write a list first and buy only the food you need to help reduce waste.
+						</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">
+							Close
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="myModal12" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content alert alert-success lead">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">
+							&times;
+						</button>
+						<h1>Glass jars</h1>
+					</div>
+					<div class="modal-body">
+						<p>
+							Collect any interesting and unusual glass jars.
+						</p>
+						<p>
+							Use them for jams and chutneys to give as homemade gifts or why not decorate them and use as tea light holders?
+						</p>
+						<p>
+							A homemade gift is a great way to reduce excessive packaging too.
+						</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">
+							Close
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="myModal13" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content alert alert-success lead">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">
+							&times;
+						</button>
+						<h1>Christmas trees</h1>
+					</div>
+					<div class="modal-body">
+						<p>
+							The Carbon Trust calculates that an artificial tree would need to be used for 10 years to have a lower carbon impact than buying a real tree.
+						</p>
+						<p>
+							The best option is to purchase a potted living tree which can be used year after year.
+						</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">
+							Close
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="myModal14" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content alert alert-success lead">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">
+							&times;
+						</button>
+						<h1>Kerbside recycling</h1>
+					</div>
+					<div class="modal-body">
+						<p>
+							Make sure you have enough kerbside recycling containers.
+						</p>
+						<p>
+							Contact your local council if you need to request more.
+						</p>
+						<p>
+							Maximise the space in your box or bin by squash the recycling as much as possible – particularly if you have to wait a little longer than normal for your next recycling collection.
+						</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">
+							Close
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="myModal15" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content alert alert-success lead">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">
+							&times;
+						</button>
+						<h1>Get crafty and reuse!</h1>
+					</div>
+					<div class="modal-body">
+						<ul>
+							<li>
+								Paint yoghurt pots and dress them with glitter and bits of fabric to make your very own tree decorations
+							</li>
+							<li>
+								Use strips of coloured paper from old magazines to make an array of interesting paper chains
+							</li>
+							<li>
+								Create your own festive bunting by recycling old fabrics
+							</li>
+						</ul>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">
+							Close
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="myModal16" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content alert alert-success lead">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">
+							&times;
+						</button>
+						<h1>Reduce food waste</h1>
+					</div>
+					<div class="modal-body">
+						<p>
+							Remember to check the use-by dates regularly on food items in your fridge and if you are not going to use them in time, freeze the food for later.
+						</p>
+						<p>
+							If the food cannot be frozen why not ask if a neighbour if they can make use of it?
+						</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">
+							Close
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="myModal17" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content alert alert-success lead">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">
+							&times;
+						</button>
+						<h1>Will it compost?</h1>
+					</div>
+					<div class="modal-body">
+						<p>
+							Use compostable items to make your own decorations.
+						</p>
+						<ul>
+							<li>
+								Dried oranges and popcorn can look very effective threaded on cotton to make pretty decorations that can be composted after.
+							</li>
+							<li>
+								Pinecones and homemade gingerbread can also look great hung on the tree.
+							</li>
+						</ul>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">
+							Close
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="myModal18" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content alert alert-success lead">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">
+							&times;
+						</button>
+						<h1>Cristmas recycling collections</h1>
+					</div>
+					<div class="modal-body">
+						<p>
+							Check with your local council about recycling collections over Christmas and the New Year as these often change.
+						</p>
+						<p>
+							Remember to recycle your Christmas tree too once the festivities are over.
+						</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">
+							Close
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="myModal19" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content alert alert-success lead">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">
+							&times;
+						</button>
+						<h1>Recycle your old clothes</h1>
+					</div>
+					<div class="modal-body">
+						<p>
+							Many of us will receive a new item of clothing at Christmas.
+						</p>
+						<p>
+							Make sure you recycle any garments you no longer need at your local recycling banks or by using your kerbside service (if available).
+						</p>
+						<p>
+							If clothing is still of good quality donate it to your local charity shop and support a worthwhile cause.
+						</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">
+							Close
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="myModal20" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content alert alert-success lead">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">
+							&times;
+						</button>
+						<h1>Foil</h1>
+					</div>
+					<div class="modal-body">
+						<p>
+							Remember to recycle your foil.
+						</p>
+						<p>
+							Recycling just six mince pie foil cases saves enough energy to watch an hour of your favourite Christmas movie.
+						</p>
+						<p>
+							Find out more about aluminium recycling at <a href="http://www.alupro.org.uk/" class="btn-success">&nbsp;www.alupro.org.uk&nbsp;.</a>
+						</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">
+							Close
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="myModal21" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content alert alert-success lead">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">
+							&times;
+						</button>
+						<h1>Watch your usage!</h1>
+					</div>
+					<div class="modal-body">
+						<p>
+							Keep an eye on your energy usage&hellip;
+						</p>
+						<p>
+							don’t leave televisions on stand by and turn off your tree lights when you go to bed.
+						</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">
+							Close
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="myModal22" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content alert alert-success lead">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">
+							&times;
+						</button>
+						<h1>Catering?</h1>
+					</div>
+					<div class="modal-body">
+						<p>
+							Think ahead if catering from large groups of people.
+						</p>
+						<p>
+							Avoid buying disposable cups and plates made from plastic.
+						</p>
+						<p>
+							Instead set a challenge for your guests to bring their own and give a prize for the best!
+						</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">
+							Close
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="myModal23" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content alert alert-success lead">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">
+							&times;
+						</button>
+						<h1>Household recycling centres (HRCs)</h1>
+					</div>
+					<div class="modal-body">
+						<p>
+							Remember Gloucestershire County Council’s <a href="http://www.recycleforgloucestershire.com/household-recycling-centres-hrcs/your-nearest-recycling-centre/" class="btn-success">&nbsp;Recycling Centres&nbsp;</a> are open every day (9.00am to 6.15pm) except for Christmas Day and New Year’s Day and accept a wide range of items for recycling.
+						</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">
+							Close
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="myModal24" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content alert alert-success lead">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">
+							&times;
+						</button>
+						<h1>Crackers!</h1>
+					</div>
+					<div class="modal-body">
+						<p>
+							Christmas crackers are often decorated with ribbons, organza and other trimmings.
+						</p>
+						<p>
+							Save these to use on your own homemade decorations next year.
+						</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">
+							Close
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="myModal25" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content alert alert-success lead">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">
+							&times;
+						</button>
+						<h1>Merry Christmas and a green New Year</h1>
+					</div>
+					<div class="modal-body">
+						<p>
+							Finally, at the end of what is often a hectic but immensely enjoyable day, take a moment to think about making your very own ‘green’ New Year’s resolution&hellip;
+						</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">
+							Close
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>

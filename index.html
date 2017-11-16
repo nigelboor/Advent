@@ -1,0 +1,170 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+	<!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>Advent calendar</title>
+
+		<meta name="description" content="Advent calendar">
+		<meta name="author" content="Gloucestershire County Council: Digital">
+
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	</head>
+
+	<body>
+
+		<div class="container">
+			<div class="row">
+				<h1 class="col-md-3 col-sm-4 col-xs-6 btn-default text-center"><img src="img/angel128+.png" onclick="javascript:dayOpen('1');" style="cursor: hand;">
+				<br />
+				1</h1>
+				<h1 class="col-md-3 col-sm-4 col-xs-6 btn-default text-center"><img src="img/candles128+.png" onclick="javascript:dayOpen('2');" style="cursor: hand;">
+				<br />
+				2 </h1>
+				<h1 class="col-md-3 col-sm-4 col-xs-6 btn-default text-center"><img src="img/candy128+.png" onclick="javascript:dayOpen('3');" style="cursor: hand;">
+				<br />
+				3 </h1>
+				<h1 class="col-md-3 col-sm-4 col-xs-6 btn-default text-center"><img src="img/card128+.png" onclick="javascript:dayOpen('4');" style="cursor: hand;">
+				<br />
+				4 </h1>
+				<h1 class="col-md-3 col-sm-4 col-xs-6 btn-default text-center"><img src="img/champagne128+.png" onclick="javascript:dayOpen('5');" style="cursor: hand;">
+				<br />
+				5 </h1>
+				<h1 class="col-md-3 col-sm-4 col-xs-6 btn-default text-center"><img src="img/christmas-basket128+.png" onclick="javascript:dayOpen('6');" style="cursor: hand;">
+				<br />
+				6 </h1>
+				<h1 class="col-md-3 col-sm-4 col-xs-6 btn-default text-center"><img src="img/christmas-house128+.png" onclick="javascript:dayOpen('7');" style="cursor: hand;">
+				<br />
+				7 </h1>
+				<h1 class="col-md-3 col-sm-4 col-xs-6 btn-default text-center"><img src="img/christmas-hut128+.png" onclick="javascript:dayOpen('8');" style="cursor: hand;">
+				<br />
+				8 </h1>
+				<h1 class="col-md-3 col-sm-4 col-xs-6 btn-default text-center"><img src="img/christmastree128+.png" onclick="javascript:dayOpen('9');" style="cursor: hand;">
+				<br />
+				9 </h1>
+				<h1 class="col-md-3 col-sm-4 col-xs-6 btn-default text-center"><img src="img/cookies128+.png" onclick="javascript:dayOpen('10');" style="cursor: hand;">
+				<br />
+				10 </h1>
+				<h1 class="col-md-3 col-sm-4 col-xs-6 btn-default text-center"><img src="img/decorations128+.png" onclick="javascript:dayOpen('11');" style="cursor: hand;">
+				<br />
+				11 </h1>
+				<h1 class="col-md-3 col-sm-4 col-xs-6 btn-default text-center"><img src="img/fireplace128+.png" onclick="javascript:dayOpen('12');" style="cursor: hand;">
+				<br />
+				12 </h1>
+				<h1 class="col-md-3 col-sm-4 col-xs-6 btn-default text-center"><img src="img/gift128+.png" onclick="javascript:dayOpen('13');" style="cursor: hand;">
+				<br />
+				13 </h1>
+				<h1 class="col-md-3 col-sm-4 col-xs-6 btn-default text-center"><img src="img/hut-gloves128+.png" onclick="javascript:dayOpen('14');" style="cursor: hand;">
+				<br />
+				14 </h1>
+				<h1 class="col-md-3 col-sm-4 col-xs-6 btn-default text-center"><img src="img/milk-biscuits128+.png" onclick="javascript:dayOpen('15');" style="cursor: hand;">
+				<br />
+				15 </h1>
+				<h1 class="col-md-3 col-sm-4 col-xs-6 btn-default text-center"><img src="img/paper-bag128+.png" onclick="javascript:dayOpen('16');" style="cursor: hand;">
+				<br />
+				16 </h1>
+				<h1 class="col-md-3 col-sm-4 col-xs-6 btn-default text-center"><img src="img/santa128+.png" onclick="javascript:dayOpen('17');" style="cursor: hand;">
+				<br />
+				17 </h1>
+				<h1 class="col-md-3 col-sm-4 col-xs-6 btn-default text-center"><img src="img/santa-chimney128+.png" onclick="javascript:dayOpen('18');" style="cursor: hand;">
+				<br />
+				18 </h1>
+				<h1 class="col-md-3 col-sm-4 col-xs-6 btn-default text-center"><img src="img/santa-moon128+.png" onclick="javascript:dayOpen('19');" style="cursor: hand;">
+				<br />
+				19 </h1>
+				<h1 class="col-md-3 col-sm-4 col-xs-6 btn-default text-center"><img src="img/sleigh128+.png" onclick="javascript:dayOpen('20');" style="cursor: hand;">
+				<br />
+				20 </h1>
+				<h1 class="col-md-3 col-sm-4 col-xs-6 btn-default text-center"><img src="img/snow-ball128+.png" onclick="javascript:dayOpen('21');" style="cursor: hand;">
+				<br />
+				21 </h1>
+				<h1 class="col-md-3 col-sm-4 col-xs-6 btn-default text-center"><img src="img/snowman128+.png" onclick="javascript:dayOpen('22');" style="cursor: hand;">
+				<br />
+				22 </h1>
+				<h1 class="col-md-3 col-sm-4 col-xs-6 btn-default text-center"><img src="img/socks128+.png" onclick="javascript:dayOpen('23');" style="cursor: hand;">
+				<br />
+				23 </h1>
+				<h1 class="col-md-3 col-sm-4 col-xs-6 btn-default text-center"><img src="img/toy128+.png" onclick="javascript:dayOpen('25');" style="cursor: hand;">
+				<br />
+				24 </h1>
+				<h1 class="col-md-3 col-sm-4 col-xs-6 btn-default text-center"><img src="img/angel128+.png" onclick="javascript:dayOpen('12');" style="cursor: hand;">
+				<br />
+				25 </h1>
+			</div>
+		</div>
+		</div>
+		<!-- JavaScript at the bottom for fast page loading -->
+
+		<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script>
+			window.jQuery || document.write('<script src="js/libs/jquery-3.2.1.min.js"><\/script>');
+		</script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<!-- end CSS-->
+
+		<!-- scripts concatenated and minified via ant build script-->
+		<script defer src="js/plugins.js"></script>
+		<script defer src="js/script.js"></script>
+		<!-- end scripts-->
+
+		<script>
+			window.ga = window.ga ||
+			function() {
+				(ga.q = ga.q || []).push(arguments);
+			};
+			ga.l = +new Date;
+			ga('create', 'UA-10559214-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+		<script async src='https://www.google-analytics.com/analytics.js'></script>
+		<!-- Google Tag Manager -->
+		<script>
+			(function(w, d, s, l, i) {
+				w[l] = w[l] || [];
+				w[l].push({
+					'gtm.start' : new Date().getTime(),
+					event : 'gtm.js'
+				});
+				var f = d.getElementsByTagName(s)[0],
+				    j = d.createElement(s),
+				    dl = l != 'dataLayer' ? '&l=' + l : '';
+				j.async = true;
+				j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+				f.parentNode.insertBefore(j, f);
+			})(window, document, 'script', 'dataLayer', 'GTM-6Z7T');
+		</script>
+		<!-- End Google Tag Manager -->
+		<script>
+			function dayOpen(date) {
+				var dateUsed = 'https://bbc.co.uk/#' + date;
+				var myWindow = window.open(dateUsed, "", "width=480,height=600");
+			}
+		</script>
+
+		<!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
+		chromium.org/developers/how-tos/chrome-frame-getting-started -->
+		<!--[if lt IE 7 ]>
+		<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+		<script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+		<![endif]-->
+		<script src="/bundles/jquery.js?v=FE7N9VYtCJnAZ3Nk1sPK43XhCnqm55ZcvKgssfqLX501"></script>
+		<script src="/bundles/modules.js?v=XmxfbLHnl7NwVrcoFRQBJ3Z2naJNwLhYB97pSWKkbSk1"></script>
+
+	</body>
+</html>

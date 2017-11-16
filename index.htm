@@ -1,0 +1,254 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+    <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>Advent calendar</title>
+
+        <meta name="description" content="Advent calendar">
+        <meta name="author" content="Gloucestershire County Council: Digital">
+
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    </head>
+
+    <body>
+
+        <div class="container">
+            <div class="row">
+                <div id="div01" class="col-md-3 col-sm-4 col-xs-6 text-center lead" style="height: 220px;">
+                    <button id="btn01" class="btn-default" onclick="javascript:dayOpen('1');" style="height: 200px; width: 180px;"><img src="http://www.gloucestershire.gov.uk/media/18364/socks128plus.png">
+                        <br />
+                        1
+                    </button>
+                </div>
+                <div id="div02" class="col-md-3 col-sm-4 col-xs-6 text-center lead" style="height: 220px;">
+                    <button id="btn02" class="btn-default" onclick="javascript:dayOpen('2');" style="height: 200px; width: 180px;"><img src="http://www.gloucestershire.gov.uk/media/18365/toy128plus.png">
+                        <br />
+                        2
+                    </button>
+                </div>
+                <div id="div03" class="col-md-3 col-sm-4 col-xs-6 text-center lead" style="height: 220px;">
+                    <button id="btn03" class="btn-default" onclick="javascript:dayOpen('3');" style="height: 200px; width: 180px;"><img src="http://www.gloucestershire.gov.uk/media/18366/angel128plus.png">
+                        <br />
+                        3
+                    </button>
+                </div>
+                <div id="div04" class="col-md-3 col-sm-4 col-xs-6 text-center lead" style="height: 220px;">
+                    <button id="btn04" class="btn-default" onclick="javascript:dayOpen('4');" style="height: 200px; width: 180px;"><img src="http://www.gloucestershire.gov.uk/media/18367/milk-biscuits128plus.png">
+                        <br />
+                        4
+                    </button>
+                </div>
+                <div id="div05" class="col-md-3 col-sm-4 col-xs-6 text-center lead" style="height: 220px;">
+                    <button id="btn05" class="btn-default" onclick="javascript:dayOpen('5');" style="height: 200px; width: 180px;"><img src="http://www.gloucestershire.gov.uk/media/18368/paper-bag128plus.png">
+                        <br />
+                        5
+                    </button>
+                </div>
+                <div id="div06" class="col-md-3 col-sm-4 col-xs-6 text-center lead" style="height: 220px;">
+                    <button id="btn06" class="btn-default" onclick="javascript:dayOpen('6');" style="height: 200px; width: 180px;"><img src="http://www.gloucestershire.gov.uk/media/18369/santa128plus.png">
+                        <br />
+                        6
+                    </button>
+                </div>
+                <div id="div07" class="col-md-3 col-sm-4 col-xs-6 text-center lead" style="height: 220px;">
+                    <button id="btn07" class="btn-default" onclick="javascript:dayOpen('7');" style="height: 200px; width: 180px;"><img src="http://www.gloucestershire.gov.uk/media/18370/santa-chimney128plus.png">
+                        <br />
+                        7
+                    </button>
+                </div>
+                <div id="div08" class="col-md-3 col-sm-4 col-xs-6 text-center lead" style="height: 220px;">
+                    <button id="btn08" class="btn-default" onclick="javascript:dayOpen('8');" style="height: 200px; width: 180px;"><img src="http://www.gloucestershire.gov.uk/media/18371/santa-moon128plus.png">
+                        <br />
+                        8
+                    </button>
+                </div>
+                <div id="div09" class="col-md-3 col-sm-4 col-xs-6 text-center lead" style="height: 220px;">
+                    <button id="btn09" class="btn-default" onclick="javascript:dayOpen('9');" style="height: 200px; width: 180px;"><img src="http://www.gloucestershire.gov.uk/media/18372/sleigh128plus.png">
+                        <br />
+                        9
+                    </button>
+                </div>
+                <div id="div10" class="col-md-3 col-sm-4 col-xs-6 text-center lead" style="height: 220px;">
+                    <button id="btn10" class="btn-default" onclick="javascript:dayOpen('10');" style="height: 200px; width: 180px;"><img src="http://www.gloucestershire.gov.uk/media/18373/snow-ball128plus.png">
+                        <br />
+                        10
+                    </button>
+                </div>
+                <div id="div11" class="col-md-3 col-sm-4 col-xs-6 text-center lead" style="height: 220px;">
+                    <button id="btn11" class="btn-default" onclick="javascript:dayOpen('11');" style="height: 200px; width: 180px;"><img src="http://www.gloucestershire.gov.uk/media/18374/snowman128plus.png">
+                        <br />
+                        11
+                    </button>
+                </div>
+                <div id="div12" class="col-md-3 col-sm-4 col-xs-6 text-center lead" style="height: 220px;">
+                    <button id="btn12" class="btn-default" style="height: 200px; width: 180px;" onclick="javascript:dayOpen('12');" style="height: 200px; width: 180px;"><img src="http://www.gloucestershire.gov.uk/media/18375/champagne128plus.png">
+                        <br />
+                        12
+                    </button>
+                </div>
+                <div id="div13" class="col-md-3 col-sm-4 col-xs-6 text-center lead" style="height: 220px;">
+                    <button id="btn13" class="btn-default" style="height: 200px; width: 180px;" onclick="javascript:dayOpen('13');" style="height: 200px; width: 180px;"><img src="http://www.gloucestershire.gov.uk/media/18376/christmas-basket128plus.png">
+                        <br />
+                        13
+                    </button>
+                </div>
+                <div id="div14" class="col-md-3 col-sm-4 col-xs-6 text-center lead" style="height: 220px;">
+                    <button id="btn14" class="btn-default" style="height: 200px; width: 180px;" onclick="javascript:dayOpen('14');" style="height: 200px; width: 180px;"><img src="http://www.gloucestershire.gov.uk/media/18377/christmas-house128plus.png">
+                        <br />
+                        14
+                    </button>
+                </div>
+                <div id="div15" class="col-md-3 col-sm-4 col-xs-6 text-center lead" style="height: 220px;">
+                    <button id="btn15" class="btn-default" style="height: 200px; width: 180px;" onclick="javascript:dayOpen('15');" style="height: 200px; width: 180px;"><img src="http://www.gloucestershire.gov.uk/media/18378/christmas-hut128plus.png">
+                        <br />
+                        15
+                    </button>
+                </div>
+                <div id="div16" class="col-md-3 col-sm-4 col-xs-6 text-center lead" style="height: 220px;">
+                    <button id="btn16" class="btn-default" style="height: 200px; width: 180px;" onclick="javascript:dayOpen('16');" style="height: 200px; width: 180px;"><img src="http://www.gloucestershire.gov.uk/media/18379/christmastree128plus.png">
+                        <br />
+                        16
+                    </button>
+                </div>
+                <div id="div17" class="col-md-3 col-sm-4 col-xs-6 text-center lead" style="height: 220px;">
+                    <button id="btn17" class="btn-default" style="height: 200px; width: 180px;" onclick="javascript:dayOpen('17');" style="height: 200px; width: 180px;"><img src="http://www.gloucestershire.gov.uk/media/18380/cookies128plus.png">
+                        <br />
+                        17
+                    </button>
+                </div>
+                <div id="div18" class="col-md-3 col-sm-4 col-xs-6 text-center lead" style="height: 220px;">
+                    <button id="btn18" class="btn-default" style="height: 200px; width: 180px;" onclick="javascript:dayOpen('18');" style="height: 200px; width: 180px;"><img src="http://www.gloucestershire.gov.uk/media/18381/fireplace128plus.png">
+                        <br />
+                        18
+                    </button>
+                </div>
+                <div id="div19" class="col-md-3 col-sm-4 col-xs-6 text-center lead" style="height: 220px;">
+                    <button id="btn19" class="btn-default" style="height: 200px; width: 180px;" onclick="javascript:dayOpen('19');" style="height: 200px; width: 180px;"><img src="http://www.gloucestershire.gov.uk/media/18382/gift128plus.png">
+                        <br />
+                        19
+                    </button>
+                </div>
+                <div id="div20" class="col-md-3 col-sm-4 col-xs-6 text-center lead" style="height: 220px;">
+                    <button id="btn20" class="btn-default" style="height: 200px; width: 180px;" onclick="javascript:dayOpen('20');" style="height: 200px; width: 180px;"><img src="http://www.gloucestershire.gov.uk/media/18383/hut-gloves128plus.png">
+                        <br />
+                        20
+                    </button>
+                </div>
+                <div id="div21" class="col-md-3 col-sm-4 col-xs-6 text-center lead" style="height: 220px;">
+                    <button id="btn21" class="btn-default" style="height: 200px; width: 180px;" onclick="javascript:dayOpen('21');" style="height: 200px; width: 180px;"><img src="http://www.gloucestershire.gov.uk/media/18384/candles128plus.png">
+                        <br />
+                        21
+                    </button>
+                </div>
+                <div id="div22" class="col-md-3 col-sm-4 col-xs-6 text-center lead" style="height: 220px;">
+                    <button id="btn22" class="btn-default" style="height: 200px; width: 180px;" onclick="javascript:dayOpen('22');" style="height: 200px; width: 180px;"><img src="http://www.gloucestershire.gov.uk/media/18385/candy128plus.png">
+                        <br />
+                        22
+                    </button>
+                </div>
+                <div id="div23" class="col-md-3 col-sm-4 col-xs-6 text-center lead" style="height: 220px;">
+                    <button id="btn23" class="btn-default" style="height: 200px; width: 180px;" onclick="javascript:dayOpen('23');" style="height: 200px; width: 180px;"><img src="http://www.gloucestershire.gov.uk/media/18386/card128plus.png">
+                        <br />
+                        23
+                    </button>
+                </div>
+                <div id="div24" class="col-md-3 col-sm-4 col-xs-6 text-center lead" style="height: 220px;">
+                    <button id="btn24" class="btn-default" style="height: 200px; width: 180px;" onclick="javascript:dayOpen('24');" style="height: 200px; width: 180px;"><img src="http://www.gloucestershire.gov.uk/media/18387/decorations128plus.png">
+                        <br />
+                        24
+                    </button>
+                </div>
+                <div id="div25" class="col-xs-12 text-center lead" style="height: 220px;">
+                    <button id="btn25" class="btn-default" style="height: 200px; width: 180px;" onclick="javascript:dayOpen('25');" style="height: 200px; width: 180px;"><img src="http://www.gloucestershire.gov.uk/media/18366/angel128plus.png">
+                        <br />
+                        25
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- JavaScript at the bottom for fast page loading -->
+        <style>
+			button {
+				border-radius: 8px;
+			}
+        </style>
+
+        <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+			window.jQuery || document.write('<script src="js/libs/jquery-3.2.1.min.js"><\/script>');
+        </script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!-- end CSS-->
+
+        <!-- scripts concatenated and minified via ant build script-->
+        <script defer src="js/plugins.js"></script>
+        <script defer src="js/script.js"></script>
+        <!-- end scripts-->
+
+        <script>
+			window.ga = window.ga ||
+			function() {
+				(ga.q = ga.q || []).push(arguments);
+			};
+			ga.l = +new Date;
+			ga('create', 'UA-10559214-1', 'auto');
+			ga('send', 'pageview');
+        </script>
+        <script async src='https://www.google-analytics.com/analytics.js'></script>
+        <!-- Google Tag Manager -->
+        <script>
+			(function(w, d, s, l, i) {
+				w[l] = w[l] || [];
+				w[l].push({
+					'gtm.start' : new Date().getTime(),
+					event : 'gtm.js'
+				});
+				var f = d.getElementsByTagName(s)[0],
+				    j = d.createElement(s),
+				    dl = l != 'dataLayer' ? '&l=' + l : '';
+				j.async = true;
+				j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+				f.parentNode.insertBefore(j, f);
+			})(window, document, 'script', 'dataLayer', 'GTM-6Z7T');
+        </script>
+        <!-- End Google Tag Manager -->
+        <script>
+			function dayOpen(date) {
+				var dateUsed = 'https://bbc.co.uk/#' + date;
+				var myWindow = window.open(dateUsed, "Today", "width=480,height=600,location=0,menubar=0,status=0,titlebar=0,toolbar=0,directories=0,personalbar=0,centerscreen=1,dialog=1");
+			}
+
+			var dd = new Date();
+			var dom = dd.getDate();
+			if (dom.length = 1) {
+				dom = '0' + dom;
+			}
+
+			var elmID = 'btn' + dom;
+			document.getElementById(elmID).focus();
+
+        </script>
+
+        <script src="/bundles/jquery.js?v=FE7N9VYtCJnAZ3Nk1sPK43XhCnqm55ZcvKgssfqLX501"></script>
+        <script src="/bundles/modules.js?v=XmxfbLHnl7NwVrcoFRQBJ3Z2naJNwLhYB97pSWKkbSk1"></script>
+
+    </body>
+</html>
