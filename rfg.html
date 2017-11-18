@@ -1,131 +1,142 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-	<title>Advent calendar</title>
+		<title>Advent calendar</title>
 
-	<meta name="description" content="Advent calendar">
-	<meta name="author" content="Gloucestershire County Council: Digital">
+		<meta name="description" content="Advent calendar">
+		<meta name="author" content="Gloucestershire County Council: Digital">
 
-	<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
 
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<style>
+			button {
+				padding: 8px !important;
+				border-radius: 8px;
+			}
+			.pcg-page-description {
+				background-color: transparent;
+			}
+		</style>
 
-	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-	<!-- Latest compiled Bootstrap JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-</head>
+		<!-- Latest compiled Bootstrap JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<body>
-	<div class="col-sm-8 col-md-9">
+	</head>
 
-		<div class="row">
-			<div id="div01" class="col-sm-4 col-xs-9 text-center lead" style="padding: 4px;">
-				<button id="btn01" class="btn btn-success" data-toggle="modal" data-target="#myModal01""><img src="http://www.gloucestershire.gov.uk/media/18630/advent-no-1-web-icon.jpg">
+	<body>
+
+		<div class="container">
+			<div class="row">
+				<div id="div01" class="col-md-3 col-sm-4 col-xs-6 text-center lead">
+					<button id="btn01" class="btn-success" data-toggle="modal" data-target="#myModal01"><img src="http://www.gloucestershire.gov.uk/media/18752/01.png">
 					</button>
-			</div>
-			<div id="div02" class="col-sm-4 col-xs-9 text-center lead" style="padding: 4px;">
-				<button id="btn02" class="btn btn-success" data-toggle="modal" data-target="#myModal02""><img src="http://www.gloucestershire.gov.uk/media/18632/turkey-no-2-web-icon.jpg">
-				</button>
-			</div>
-			<div id="div03" class="col-sm-4 col-xs-9 text-center lead" style="padding: 4px;">
-				<button id="btn03" class="btn btn-success" data-toggle="modal" data-target="#myModal03""><img src="http://www.gloucestershire.gov.uk/media/18631/toy-no-3-web-icon.jpg">
+				</div>
+				<div id="div02" class="col-md-3 col-sm-4 col-xs-6 text-center lead">
+					<button id="btn02" class="btn-success" data-toggle="modal" data-target="#myModal02"><img src="http://www.gloucestershire.gov.uk/media/18753/02.png">
 					</button>
-			</div>
-			<div id="div04" class="col-sm-4 col-xs-9 text-center lead" style="padding: 4px;">
-				<button id="btn04" class="btn btn-success" data-toggle="modal" data-target="#myModal04""><img src="http://www.gloucestershire.gov.uk/media/18667/cards-no-4-web-icon.jpg">
-				</button>
-			</div>
-			<div id="div05" class="col-sm-4 col-xs-9 text-center lead" style="padding: 4px;">
-				<button id="btn05" class="btn btn-success" data-toggle="modal" data-target="#myModal05""><img src="http://www.gloucestershire.gov.uk/media/18655/wrapping-paper-no-5-web-icon.jpg">
+				</div>
+				<div id="div03" class="col-md-3 col-sm-4 col-xs-6 text-center lead">
+					<button id="btn03" class="btn-success" data-toggle="modal" data-target="#myModal03"><img src="http://www.gloucestershire.gov.uk/media/18754/03.png">
 					</button>
-			</div>
-			<div id="div06" class="col-sm-4 col-xs-9 text-center lead" style="padding: 4px;">
-				<button id="btn06" class="btn btn-success" data-toggle="modal" data-target="#myModal06""><img src="http://www.gloucestershire.gov.uk/media/18642/fairy-lights-no-6-web-icon.jpg">
-				</button>
-			</div>
-			<div id="div07" class="col-sm-4 col-xs-9 text-center lead" style="padding: 4px;">
-				<button id="btn07" class="btn btn-success" data-toggle="modal" data-target="#myModal07""><img src="http://www.gloucestershire.gov.uk/media/18640/cards-and-tags-no-7-web-icon.jpg">
+				</div>
+				<div id="div04" class="col-md-3 col-sm-4 col-xs-6 text-center lead">
+					<button id="btn04" class="btn-success" data-toggle="modal" data-target="#myModal04"><img src="http://www.gloucestershire.gov.uk/media/18755/04.png">
 					</button>
-			</div>
-			<div id="div08" class="col-sm-4 col-xs-9 text-center lead" style="padding: 4px;">
-				<button id="btn08" class="btn btn-success" data-toggle="modal" data-target="#myModal08""><img src="http://www.gloucestershire.gov.uk/media/18660/tupperware-no-8-web-icon.jpg">
-				</button>
-			</div>
-			<div id="div09" class="col-sm-4 col-xs-9 text-center lead" style="padding: 4px;">
-				<button id="btn09" class="btn btn-success" data-toggle="modal" data-target="#myModal09""><img src="http://www.gloucestershire.gov.uk/media/18663/weee-no-9-web-icon.jpg">
+				</div>
+				<div id="div05" class="col-md-3 col-sm-4 col-xs-6 text-center lead">
+					<button id="btn05" class="btn-success" data-toggle="modal" data-target="#myModal05"><img src="http://www.gloucestershire.gov.uk/media/18756/05.png">
 					</button>
-			</div>
-			<div id="div10" class="col-sm-4 col-xs-9 text-center lead" style="padding: 4px;">
-				<button id="btn10" class="btn btn-success" data-toggle="modal" data-target="#myModal10""><img src="http://www.gloucestershire.gov.uk/media/18646/furoshiki-no-10-web-icon.jpg">
-				</button>
-			</div>
-			<div id="div11" class="col-sm-4 col-xs-9 text-center lead" style="padding: 4px;">
-				<button id="btn11" class="btn btn-success" data-toggle="modal" data-target="#myModal11""><img src="http://www.gloucestershire.gov.uk/media/18653/shopping-list-no-11-web-icon.jpg">
+				</div>
+				<div id="div06" class="col-md-3 col-sm-4 col-xs-6 text-center lead">
+					<button id="btn06" class="btn-success" data-toggle="modal" data-target="#myModal06"><img src="http://www.gloucestershire.gov.uk/media/18757/06.png">
 					</button>
-			</div>
-			<div id="div12" class="col-sm-4 col-xs-9 text-center lead" style="padding: 4px;">
-				<button id="btn12" class="btn btn-success" data-toggle="modal" data-target="#myModal12""><img src="http://www.gloucestershire.gov.uk/media/18648/glass-jar-no-12-web-icon.jpg">
-				</button>
-			</div>
-			<div id="div13" class="col-sm-4 col-xs-9 text-center lead" style="padding: 4px;">
-				<button id="btn13" class="btn btn-success" data-toggle="modal" data-target="#myModal13""><img src="http://www.gloucestershire.gov.uk/media/18658/tree-no-13-web-icon.jpg">
+				</div>
+				<div id="div07" class="col-md-3 col-sm-4 col-xs-6 text-center lead">
+					<button id="btn07" class="btn-success" data-toggle="modal" data-target="#myModal07"><img src="http://www.gloucestershire.gov.uk/media/18758/07.png">
 					</button>
-			</div>
-			<div id="div14" class="col-sm-4 col-xs-9 text-center lead" style="padding: 4px;">
-				<button id="btn14" class="btn btn-success" data-toggle="modal" data-target="#myModal14""><img src="http://www.gloucestershire.gov.uk/media/18651/recycling-containers-no-14-web-icon.jpg">
-				</button>
-			</div>
-			<div id="div15" class="col-sm-4 col-xs-9 text-center lead" style="padding: 4px;">
-				<button id="btn15" class="btn btn-success" data-toggle="modal" data-target="#myModal15""><img src="http://www.gloucestershire.gov.uk/media/18638/homemade-bell-no-15-web-icon.jpg">
+				</div>
+				<div id="div08" class="col-md-3 col-sm-4 col-xs-6 text-center lead">
+					<button id="btn08" class="btn-success" data-toggle="modal" data-target="#myModal08"><img src="http://www.gloucestershire.gov.uk/media/18759/08.png">
 					</button>
-			</div>
-			<div id="div16" class="col-sm-4 col-xs-9 text-center lead" style="padding: 4px;">
-				<button id="btn16" class="btn btn-success" data-toggle="modal" data-target="#myModal16""><img src="http://www.gloucestershire.gov.uk/media/18644/freezer-no-16-web-icon.jpg">
-				</button>
-			</div>
-			<div id="div17" class="col-sm-4 col-xs-9 text-center lead" style="padding: 4px;">
-				<button id="btn17" class="btn btn-success" data-toggle="modal" data-target="#myModal17""><img src="http://www.gloucestershire.gov.uk/media/18679/gingerbread-no-17-web-icon.jpg">
+				</div>
+				<div id="div09" class="col-md-3 col-sm-4 col-xs-6 text-center lead">
+					<button id="btn09" class="btn-success" data-toggle="modal" data-target="#myModal09"><img src="http://www.gloucestershire.gov.uk/media/18760/09.png">
 					</button>
-			</div>
-			<div id="div18" class="col-sm-4 col-xs-9 text-center lead" style="padding: 4px;">
-				<button id="btn18" class="btn btn-success" data-toggle="modal" data-target="#myModal18""><img src="http://www.gloucestershire.gov.uk/media/18683/calendar-no-18-web-icon.jpg">
-				</button>
-			</div>
-			<div id="div19" class="col-sm-4 col-xs-9 text-center lead" style="padding: 4px;">
-				<button id="btn19" class="btn btn-success" data-toggle="modal" data-target="#myModal19""><img src="http://www.gloucestershire.gov.uk/media/18682/textiles-no-19-web-icon.jpg">
+				</div>
+				<div id="div10" class="col-md-3 col-sm-4 col-xs-6 text-center lead">
+					<button id="btn10" class="btn-success" data-toggle="modal" data-target="#myModal10"><img src="http://www.gloucestershire.gov.uk/media/18761/10.png">
 					</button>
-			</div>
-			<div id="div20" class="col-sm-4 col-xs-9 text-center lead" style="padding: 4px;">
-				<button id="btn20" class="btn btn-success" data-toggle="modal" data-target="#myModal20""><img src="http://www.gloucestershire.gov.uk/media/18678/foil-no-20-web-icon.jpg">
-				</button>
-			</div>
-			<div id="div21" class="col-sm-4 col-xs-9 text-center lead" style="padding: 4px;">
-				<button id="btn21" class="btn btn-success" data-toggle="modal" data-target="#myModal21""><img src="http://www.gloucestershire.gov.uk/media/18677/tree-with-lights-no-21-web-icon.jpg">
+				</div>
+				<div id="div11" class="col-md-3 col-sm-4 col-xs-6 text-center lead">
+					<button id="btn11" class="btn-success" data-toggle="modal" data-target="#myModal11"><img src="http://www.gloucestershire.gov.uk/media/18762/11.png">
 					</button>
-			</div>
-			<div id="div22" class="col-sm-4 col-xs-9 text-center lead" style="padding: 4px;">
-				<button id="btn22" class="btn btn-success" data-toggle="modal" data-target="#myModal22""><img src="http://www.gloucestershire.gov.uk/media/18671/xmas-plates-no-22-web-icon.jpg">
-				</button>
-			</div>
-			<div id="div23" class="col-sm-4 col-xs-9 text-center lead" style="padding: 4px;">
-				<button id="btn23" class="btn btn-success" data-toggle="modal" data-target="#myModal23""><img src="http://www.gloucestershire.gov.uk/media/18681/hrc-no-23-web-icon.jpg">
+				</div>
+				<div id="div12" class="col-md-3 col-sm-4 col-xs-6 text-center lead">
+					<button id="btn12" class="btn-success" data-toggle="modal" data-target="#myModal12"><img src="http://www.gloucestershire.gov.uk/media/18763/12.png">
 					</button>
-			</div>
-			<div id="div24" class="col-sm-4 col-xs-9 text-center lead" style="padding: 4px;">
-				<button id="btn24" class="btn btn-success" data-toggle="modal" data-target="#myModal24""><img src="http://www.gloucestershire.gov.uk/media/18680/ribbons-and-tags-no-24-web-icon.jpg">
-				</button>
-			</div>
-			<div id="div25" class="col-sm-12 text-center lead" style="padding: 4px;">
-				<button id="btn25" class="btn btn-success" data-toggle="modal" data-target="#myModal25""><img src="http://www.gloucestershire.gov.uk/media/18688/no-25-web-icon.jpg">
+				</div>
+				<div id="div13" class="col-md-3 col-sm-4 col-xs-6 text-center lead">
+					<button id="btn13" class="btn-success" data-toggle="modal" data-target="#myModal13"><img src="http://www.gloucestershire.gov.uk/media/18764/13.png">
 					</button>
+				</div>
+				<div id="div14" class="col-md-3 col-sm-4 col-xs-6 text-center lead">
+					<button id="btn14" class="btn-success" data-toggle="modal" data-target="#myModal14"><img src="http://www.gloucestershire.gov.uk/media/18765/14.png">
+					</button>
+				</div>
+				<div id="div15" class="col-md-3 col-sm-4 col-xs-6 text-center lead">
+					<button id="btn15" class="btn-success" data-toggle="modal" data-target="#myModal15"><img src="http://www.gloucestershire.gov.uk/media/18766/15.png">
+					</button>
+				</div>
+				<div id="div16" class="col-md-3 col-sm-4 col-xs-6 text-center lead">
+					<button id="btn16" class="btn-success" data-toggle="modal" data-target="#myModal16"><img src="http://www.gloucestershire.gov.uk/media/18767/16.png">
+					</button>
+				</div>
+				<div id="div17" class="col-md-3 col-sm-4 col-xs-6 text-center lead">
+					<button id="btn17" class="btn-success" data-toggle="modal" data-target="#myModal17"><img src="http://www.gloucestershire.gov.uk/media/18768/17.png">
+					</button>
+				</div>
+				<div id="div18" class="col-md-3 col-sm-4 col-xs-6 text-center lead">
+					<button id="btn18" class="btn-success" data-toggle="modal" data-target="#myModal18"><img src="http://www.gloucestershire.gov.uk/media/18769/18.png">
+					</button>
+				</div>
+				<div id="div19" class="col-md-3 col-sm-4 col-xs-6 text-center lead">
+					<button id="btn19" class="btn-success" data-toggle="modal" data-target="#myModal19"><img src="http://www.gloucestershire.gov.uk/media/18770/19.png">
+					</button>
+				</div>
+				<div id="div20" class="col-md-3 col-sm-4 col-xs-6 text-center lead">
+					<button id="btn20" class="btn-success" data-toggle="modal" data-target="#myModal20"><img src="http://www.gloucestershire.gov.uk/media/18771/20.png">
+					</button>
+				</div>
+				<div id="div21" class="col-md-3 col-sm-4 col-xs-6 text-center lead">
+					<button id="btn21" class="btn-success" data-toggle="modal" data-target="#myModal21"><img src="http://www.gloucestershire.gov.uk/media/18772/21.png">
+					</button>
+				</div>
+				<div id="div22" class="col-md-3 col-sm-4 col-xs-6 text-center lead">
+					<button id="btn22" class="btn-success" data-toggle="modal" data-target="#myModal22"><img src="http://www.gloucestershire.gov.uk/media/18773/22.png">
+					</button>
+				</div>
+				<div id="div23" class="col-md-3 col-sm-4 col-xs-6 text-center lead">
+					<button id="btn23" class="btn-success" data-toggle="modal" data-target="#myModal23"><img src="http://www.gloucestershire.gov.uk/media/18774/23.png">
+					</button>
+				</div>
+				<div id="div24" class="col-md-3 col-sm-4 col-xs-6 text-center lead">
+					<button id="btn24" class="btn-success" data-toggle="modal" data-target="#myModal24"><img src="http://www.gloucestershire.gov.uk/media/18775/24.png">
+					</button>
+				</div>
+				<div id="div25" class="col-xs-12 text-center lead">
+					<button id="btn25" class="btn-success" data-toggle="modal" data-target="#myModal25"><img src="http://www.gloucestershire.gov.uk/media/18751/25.png">
+					</button>
+				</div>
 			</div>
 		</div>
 
@@ -149,7 +160,7 @@
 						</p>
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-success" data-dismiss="modal">
+						<button type="button" class="btn btn-default" data-dismiss="modal">
 							Close
 						</button>
 					</div>
@@ -168,11 +179,11 @@
 					</div>
 					<div class="modal-body">
 						<p>
-							Visit <a href="http://www.lovefoodhatewaste.com/" class="btn-success lead">&nbsp;www.lovefoodhatewaste.com&nbsp;</a> for a range of seasonal recipes, helping you make the most of your food leftovers.
+							Visit <a href="http://www.lovefoodhatewaste.com/" class="btn-success">&nbsp;www.lovefoodhatewaste.com&nbsp;</a> for a range of seasonal recipes, helping you make the most of your food leftovers.
 						</p>
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-success" data-dismiss="modal">
+						<button type="button" class="btn btn-default" data-dismiss="modal">
 							Close
 						</button>
 					</div>
@@ -198,7 +209,7 @@
 						</p>
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-success" data-dismiss="modal">
+						<button type="button" class="btn btn-default" data-dismiss="modal">
 							Close
 						</button>
 					</div>
@@ -224,7 +235,7 @@
 						</p>
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-success" data-dismiss="modal">
+						<button type="button" class="btn btn-default" data-dismiss="modal">
 							Close
 						</button>
 					</div>
@@ -250,7 +261,7 @@
 						</p>
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-success" data-dismiss="modal">
+						<button type="button" class="btn btn-default" data-dismiss="modal">
 							Close
 						</button>
 					</div>
@@ -275,11 +286,11 @@
 							The Waste and Resources Action Programme (WRAP) estimates that 500 tonnes of lights are thrown each year.
 						</p>
 						<p>
-							Take them to <a href="http://www.recycleforgloucestershire.com/household-recycling-centres-hrcs/your-nearest-recycling-centre/" class="btn-success lead">&nbsp;your local Household Recycling Centre&nbsp;</a> and put in the bank for small electrical items.
+							Take them to <a href="http://www.recycleforgloucestershire.com/household-recycling-centres-hrcs/your-nearest-recycling-centre/" class="btn-success">&nbsp;your local Household Recycling Centre&nbsp;</a> and put in the bank for small electrical items.
 						</p>
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-success" data-dismiss="modal">
+						<button type="button" class="btn btn-default" data-dismiss="modal">
 							Close
 						</button>
 					</div>
@@ -302,7 +313,7 @@
 						</p>
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-success" data-dismiss="modal">
+						<button type="button" class="btn btn-default" data-dismiss="modal">
 							Close
 						</button>
 					</div>
@@ -328,7 +339,7 @@
 						</p>
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-success" data-dismiss="modal">
+						<button type="button" class="btn btn-default" data-dismiss="modal">
 							Close
 						</button>
 					</div>
@@ -353,12 +364,11 @@
 							However, sending old electricals to landfill can cause environmental problems as they can contain hazardous substances such as lead and arsenic.
 						</p>
 						<p>
-							Make sure to take old items to <a href="http://www.recycleforgloucestershire.com/household-recycling-centres-hrcs/your-nearest-recycling-centre/" class="btn-success lead">&nbsp;the Household Recycling Centre&nbsp;</a> and place in the bank for small
-							electricals if they cannot be repaired.
+							Make sure to take old items to <a href="http://www.recycleforgloucestershire.com/household-recycling-centres-hrcs/your-nearest-recycling-centre/" class="btn-success">&nbsp;the Household Recycling Centre&nbsp;</a> and place in the bank for small electricals if they cannot be repaired.
 						</p>
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-success" data-dismiss="modal">
+						<button type="button" class="btn btn-default" data-dismiss="modal">
 							Close
 						</button>
 					</div>
@@ -380,11 +390,11 @@
 							Furoshiki is the Japanese art of gift-wrapping using fabric which can be used again and again.
 						</p>
 						<p>
-							Need some inspiration? Visit: <a href="https://www.youtube.com/watch?v=Bn6zdyCAwJs" class="btn-success lead">&nbsp;YouTube&nbsp;</a>.
+							Need some inspiration?  Visit: <a href="https://www.youtube.com/watch?v=Bn6zdyCAwJs" class="btn-success">&nbsp;YouTube&nbsp;</a>.
 						</p>
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-success" data-dismiss="modal">
+						<button type="button" class="btn btn-default" data-dismiss="modal">
 							Close
 						</button>
 					</div>
@@ -410,7 +420,7 @@
 						</p>
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-success" data-dismiss="modal">
+						<button type="button" class="btn btn-default" data-dismiss="modal">
 							Close
 						</button>
 					</div>
@@ -439,7 +449,7 @@
 						</p>
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-success" data-dismiss="modal">
+						<button type="button" class="btn btn-default" data-dismiss="modal">
 							Close
 						</button>
 					</div>
@@ -465,7 +475,7 @@
 						</p>
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-success" data-dismiss="modal">
+						<button type="button" class="btn btn-default" data-dismiss="modal">
 							Close
 						</button>
 					</div>
@@ -494,7 +504,7 @@
 						</p>
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-success" data-dismiss="modal">
+						<button type="button" class="btn btn-default" data-dismiss="modal">
 							Close
 						</button>
 					</div>
@@ -525,7 +535,7 @@
 						</ul>
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-success" data-dismiss="modal">
+						<button type="button" class="btn btn-default" data-dismiss="modal">
 							Close
 						</button>
 					</div>
@@ -551,7 +561,7 @@
 						</p>
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-success" data-dismiss="modal">
+						<button type="button" class="btn btn-default" data-dismiss="modal">
 							Close
 						</button>
 					</div>
@@ -582,7 +592,7 @@
 						</ul>
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-success" data-dismiss="modal">
+						<button type="button" class="btn btn-default" data-dismiss="modal">
 							Close
 						</button>
 					</div>
@@ -608,7 +618,7 @@
 						</p>
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-success" data-dismiss="modal">
+						<button type="button" class="btn btn-default" data-dismiss="modal">
 							Close
 						</button>
 					</div>
@@ -637,7 +647,7 @@
 						</p>
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-success" data-dismiss="modal">
+						<button type="button" class="btn btn-default" data-dismiss="modal">
 							Close
 						</button>
 					</div>
@@ -662,11 +672,11 @@
 							Recycling just six mince pie foil cases saves enough energy to watch an hour of your favourite Christmas movie.
 						</p>
 						<p>
-							Find out more about aluminium recycling at <a href="http://www.alupro.org.uk/" class="btn-success lead">&nbsp;www.alupro.org.uk&nbsp;.</a>
+							Find out more about aluminium recycling at <a href="http://www.alupro.org.uk/" class="btn-success">&nbsp;www.alupro.org.uk&nbsp;.</a>
 						</p>
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-success" data-dismiss="modal">
+						<button type="button" class="btn btn-default" data-dismiss="modal">
 							Close
 						</button>
 					</div>
@@ -692,7 +702,7 @@
 						</p>
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-success" data-dismiss="modal">
+						<button type="button" class="btn btn-default" data-dismiss="modal">
 							Close
 						</button>
 					</div>
@@ -721,7 +731,7 @@
 						</p>
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-success" data-dismiss="modal">
+						<button type="button" class="btn btn-default" data-dismiss="modal">
 							Close
 						</button>
 					</div>
@@ -740,12 +750,11 @@
 					</div>
 					<div class="modal-body">
 						<p>
-							Remember Gloucestershire County Council’s <a href="http://www.recycleforgloucestershire.com/household-recycling-centres-hrcs/your-nearest-recycling-centre/" class="btn-success lead">&nbsp;Recycling Centres&nbsp;</a> are open every day (9.00am to 6.15pm)
-							except for Christmas Day and New Year’s Day and accept a wide range of items for recycling.
+							Remember Gloucestershire County Council’s <a href="http://www.recycleforgloucestershire.com/household-recycling-centres-hrcs/your-nearest-recycling-centre/" class="btn-success">&nbsp;Recycling Centres&nbsp;</a> are open every day (9.00am to 6.15pm) except for Christmas Day and New Year’s Day and accept a wide range of items for recycling.
 						</p>
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-success" data-dismiss="modal">
+						<button type="button" class="btn btn-default" data-dismiss="modal">
 							Close
 						</button>
 					</div>
@@ -771,7 +780,7 @@
 						</p>
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-success" data-dismiss="modal">
+						<button type="button" class="btn btn-default" data-dismiss="modal">
 							Close
 						</button>
 					</div>
@@ -794,7 +803,7 @@
 						</p>
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-success" data-dismiss="modal">
+						<button type="button" class="btn btn-default" data-dismiss="modal">
 							Close
 						</button>
 					</div>
@@ -802,7 +811,5 @@
 			</div>
 		</div>
 
-	</div>
-</body>
-
+	</body>
 </html>
